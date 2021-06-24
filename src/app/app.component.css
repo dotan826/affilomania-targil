@@ -1,0 +1,296 @@
+
+.page{
+  width: 100vw;
+  min-height: 100vh;
+
+  background-image: url("src/assets/background.svg");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Desktop -START----------------------------------------------------------- */
+@media only screen and (min-width: 951px) {
+
+  .content{
+    width: 950px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .rocket-logo-area{
+
+  }
+
+  .rocket-logo{
+    max-width: 200px;
+    margin-bottom: 30px;
+
+    animation: 2s rocket ease-in-out infinite;
+  }
+
+  @keyframes rocket {
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(10deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+
+  .mid-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mid-content-left{
+    max-width: 600px;
+  }
+
+  .mid-header{
+    color: lightskyblue;
+    font-size: 65px;
+    margin: 0;
+  }
+
+  .mid-paragraph{
+    color: white;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .mid-content-right{
+
+  }
+
+  .hero-logo{
+    max-width: 350px;
+  }
+
+  .clocks-all{
+    display: flex;
+  }
+
+  .clock-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .clock-header{
+    color: white;
+    font-size: 35px;
+  }
+
+  .clock-time{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clock-minutes{
+    font-size: 60px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .clock-divider{
+    font-size: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .clock-seconds{
+    font-size: 60px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .clock-button{
+    width: 300px;
+    height: 70px;
+    font-size: 35px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 250ms;
+  }
+
+  .clock-button:hover {
+    background-color: darkred;
+  }
+
+  .clock-button:active{
+    background-color: darkred;
+  }
+
+}
+/* Desktop -END----------------------------------------------------------- */
+
+
+
+/* Mobile -START----------------------------------------------------------- */
+@media only screen and (max-width: 950px) {
+
+  .content{
+    width: 950px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .rocket-logo-area{
+
+  }
+
+  .rocket-logo{
+    max-width: 180px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    animation: 2s rocket ease-in-out infinite;
+  }
+
+  @keyframes rocket {
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(10deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+
+  .mid-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mid-content-left{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .mid-header{
+    color: lightskyblue;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mid-paragraph{
+    color: white;
+    font-size: 27px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .mid-content-right{
+
+  }
+
+  .hero-logo{
+    max-width: 300px;
+  }
+
+  .clock-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .clock-header{
+    color: white;
+    font-size: 30px;
+  }
+
+  .clock-time{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clock-minutes{
+    font-size: 60px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .clock-divider{
+    font-size: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .clock-seconds{
+    font-size: 60px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .clock-button{
+    width: 270px;
+    height: 60px;
+    font-size: 35px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: 250ms;
+  }
+
+  .clock-button:hover {
+    background-color: darkred;
+  }
+
+  .clock-button:active{
+    background-color: darkred;
+  }
+
+}
+/* Mobile -END----------------------------------------------------------- */
+
